@@ -45,6 +45,7 @@ const Background = () => {
     // Degradado de colores de rojo a negro
     const colors = ['#ff0000', '#cc0000', '#990000', '#660000', '#330000', '#110000'];
     
+    // Movemos la clase Particle aquí dentro, donde canvas ya está verificado
     class Particle {
       x: number;
       y: number;

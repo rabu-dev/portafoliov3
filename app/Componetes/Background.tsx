@@ -189,11 +189,11 @@ const Background = () => {
       lastFrameTime = timestamp;
       
       if (!ctx) return;
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.clearRect(0, 0, safeCanvas.width, safeCanvas.height);
       
       // Fondo negro
       ctx.fillStyle = '#000000';
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.fillRect(0, 0, safeCanvas.width, safeCanvas.height);
       
       // Actualizar y dibujar partículas
       for (const particle of particles) {

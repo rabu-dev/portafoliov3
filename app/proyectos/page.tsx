@@ -1,4 +1,5 @@
-import Image from "next/image";
+// Eliminar la importación no utilizada
+// import Image from "next/image";
 import AnimacionProyectos from "../Componetes/AnimacionProyectos";
 
 

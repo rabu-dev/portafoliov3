@@ -21,7 +21,7 @@ const Background = () => {
     handleResize();
 
     // Variables para interactividad con el mouse
-    let mouse = {
+    const mouse = {
       x: undefined as number | undefined,
       y: undefined as number | undefined,
       radius: 120
@@ -159,7 +159,7 @@ const Background = () => {
           // Usar distancia al cuadrado para evitar cálculo de raíz cuadrada
           if (distanceSquared < maxDistanceSquared) {
             // Opacidad basada en la distancia - simplificada
-            const opacity = 1 - (Math.sqrt(distanceSquared) / maxDistance);
+            // const opacity = 1 - (Math.sqrt(distanceSquared) / maxDistance);
             
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);

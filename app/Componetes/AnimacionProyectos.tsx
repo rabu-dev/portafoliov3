@@ -1,5 +1,6 @@
 'use client';
-import Image from "next/image";
+// Eliminar la importación no utilizada
+// import Image from "next/image";
 
 import { motion, AnimatePresence } from 'framer-motion';
 

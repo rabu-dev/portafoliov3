@@ -72,7 +72,9 @@ export async function POST(req: Request) {
 }
 
 // Handle OPTIONS request for CORS
-export async function OPTIONS(req: Request) {
+export async function OPTIONS() {
+  // Eliminar el parámetro no utilizado
+  // export async function OPTIONS(req: Request) {
   return NextResponse.json(
     {},
     {

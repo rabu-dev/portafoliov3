@@ -1,14 +1,11 @@
 'use client';
 
-import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-// Eliminar la importación no utilizada
-// import Background from './fondo/Background';
+
 
 
 export default function HeroWithProyectos() {
-  // Eliminar las variables no utilizadas o comentarlas si planeas usarlas después
-  // const [mostrarProyectos, setMostrarProyectos] = useState(false);
+ 
   const nombre = "Rabudev";
   
     const letrasAnim = {
@@ -172,8 +169,7 @@ export default function HeroWithProyectos() {
           </motion.div>
         
       </AnimatePresence>
-      {/* Eliminar esta línea: */}
-      {/* <Background /> */}
+     
       
     </section>
   );

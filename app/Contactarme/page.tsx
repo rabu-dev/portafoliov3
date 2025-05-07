@@ -1,7 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-// Eliminar AnimatePresence si no se usa
-// import { motion, AnimatePresence } from 'framer-motion';
+
 import { useState } from 'react';
 
 export default function Home() {

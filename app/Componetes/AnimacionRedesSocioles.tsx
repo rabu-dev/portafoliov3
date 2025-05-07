@@ -1,6 +1,6 @@
 'use client';
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
+
 
 
 export default function AnimacionRedeSociales() {
@@ -84,13 +84,7 @@ export default function AnimacionRedeSociales() {
                     }}
                     whileTap={{ scale: 0.9 }}
                 >
-                    <Image 
-                        src={social.src} 
-                        alt={social.alt} 
-                        width={50} 
-                        height={50} 
-                        className="drop-shadow-lg"
-                    />
+                    
                 </motion.a>
             ))}
         </motion.div>

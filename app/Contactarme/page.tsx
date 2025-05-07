@@ -32,8 +32,12 @@ export default function Home() {
 
       setSuccess(true);
       setForm({ name: "", email: "", message: "" });
-    } catch (err: any) {
-      setError(err?.message || 'Hubo un error al enviar el mensaje');
+    } catch (err: unknown) {
+      if (err instanceof Error) {
+        setError(err.message);
+      } else {
+        setError('Hubo un error al enviar el mensaje');
+      }
     } finally {
       setSending(false);
     }

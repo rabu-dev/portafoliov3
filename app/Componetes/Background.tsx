@@ -45,6 +45,9 @@ const Background = () => {
     // Degradado de colores de rojo a negro
     const colors = ['#ff0000', '#cc0000', '#990000', '#660000', '#330000', '#110000'];
     
+    // Crear una referencia segura al canvas que TypeScript reconozca como no-nula
+    const safeCanvas = canvas;
+    
     // Movemos la clase Particle aquí dentro, donde canvas ya está verificado
     class Particle {
       x: number;
@@ -61,8 +64,8 @@ const Background = () => {
       glowDirection: number;
       
       constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
+        this.x = Math.random() * safeCanvas.width;
+        this.y = Math.random() * safeCanvas.height;
         this.baseSize = Math.random() * 3 + 1;
         this.size = this.baseSize;
         this.speedX = (Math.random() - 0.5) * 1;
@@ -84,11 +87,11 @@ const Background = () => {
         this.y += this.speedY;
         
         // Rebote en los bordes
-        if (this.x > canvas.width || this.x < 0) {
+        if (this.x > safeCanvas.width || this.x < 0) {
           this.speedX = -this.speedX;
         }
         
-        if (this.y > canvas.height || this.y < 0) {
+        if (this.y > safeCanvas.height || this.y < 0) {
           this.speedY = -this.speedY;
         }
         

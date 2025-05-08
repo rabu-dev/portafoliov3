@@ -151,7 +151,7 @@ const Background = () => {
       const maxDistance = 150; // Reducida la distancia máxima
       const maxDistanceSquared = maxDistance * maxDistance; // Evitar cálculos de raíz cuadrada
       
-      ctx.strokeStyle = 'rgba(255, 0, 0, 0.15)'; // Cambiado a rojo con baja opacidad
+      ctx.strokeStyle = 'rgba(255, 0, 0, 0.55)'; // Cambiado a rojo con baja opacidad
       ctx.lineWidth = 0.5;
       
       for (let i = 0; i < particles.length; i++) {

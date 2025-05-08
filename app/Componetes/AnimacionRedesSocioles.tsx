@@ -84,7 +84,7 @@ export default function AnimacionRedeSociales() {
                     }}
                     whileTap={{ scale: 0.9 }}
                 >
-                    
+                    <img src={social.src} alt={social.alt} className="w-12 h-12" />
                 </motion.a>
             ))}
         </motion.div>
